@@ -1,4 +1,21 @@
-HEAD
+# Project
+data/raw/
+data/own/
+data/processed/
+model/
+.vscode/
+.env
+
+# LaTeX build files
+*.aux
+*.toc
+*.out
+*.lof
+*.lot
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
 .env
 venv/
 .venv/
@@ -223,4 +240,3 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
-6b256d46871373532a0e2a6b37ff55938751adf7
