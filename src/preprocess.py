@@ -9,9 +9,9 @@ nltk.download("wordnet", quiet=True)
 NEG = {"no", "not", "nor", "never", "don", "didn", "doesn", "isn", "wasn",
        "aren", "weren", "couldn", "wouldn", "shouldn", "won", "hasn",
        "haven", "hadn", "ain", "mustn", "needn", "shan", "mightn"}
-STOP_ALL = set(stopwords.words("english"))
+STOP_ALL = set(stopwords.words("english")) #Stop words are extremely common words in English that don't carry much emotional or topic weight—words like "the", "is", "at", "which", and "on".
 STOP_KEEP = STOP_ALL - NEG
-LEM = WordNetLemmatizer()
+LEM = WordNetLemmatizer()  #A lemmatizer squishes words down to their root form
 
 def clean(text, stop="none", lemmatize=True):
     text = re.sub(r"<.*?>", " ", text).lower()
